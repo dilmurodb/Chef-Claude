@@ -1,13 +1,15 @@
 import '../styles/form.css'
 
 
-export default function Form() {
-    return <form className='form'>
+export default function Form({ ingredient, setIngredient, handleAddIngredient }) {
+    return <form className='form' onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor='ingredients'>Add ingredients</label>
                 <input type='text'
                         id='ingredients'
                         placeholder='e.g. oregano'
+                        value={ingredient}
+                        onChange={(e) => setIngredient(e.target.value)}
                         />
-                <button type='submit'><span>+ Add ingredient</span></button>
+                <button onClick={() => handleAddIngredient(ingredient)} type='submit'><span>+ Add ingredient</span></button>
            </form>
 }
