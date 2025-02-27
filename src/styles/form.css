@@ -1,0 +1,40 @@
+.form {
+    width: 594px;
+    height: 38px;
+    margin-top: 67px;
+}
+.form label {
+    position: absolute;
+    left: -99999px;
+}
+.form input {
+    width: 399px;
+    height: 38px;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+    padding: 9px 13px;
+    margin-right: 6px;
+}
+.form input::placeholder {
+    width: 83px;
+    height: 20px;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6B7280;
+}
+.form button {
+    width: 183px;
+    height: 38px;
+    border-radius: 6px;
+    padding: 9px 17px;
+    background-color: #141413;
+    color: #FFFFFF;
+    margin-left: 6px;
+}
+.form span {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FAFAF8;
+}
