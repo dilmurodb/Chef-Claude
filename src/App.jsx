@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
+import { getRecipeFromMistral } from './components/ai'
 
 function App() {
 
@@ -9,13 +10,16 @@ function App() {
   const [ingredientsList, setIngredientsList] = useState([])
   const [toggle, setToggle] = useState(false)
 
-  const handleToggle = () => {
+  const handleToggle = async () => {
     setToggle(!toggle)
+    let a = await getRecipeFromMistral(ingredientsList)
+    console.log(a)
   }
+
+  
 
 
   const handleAddIngredient = (value) => {
-    console.log(value)
     setIngredientsList([...ingredientsList, value])
     setIngredient('')
   }

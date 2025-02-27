@@ -6,6 +6,8 @@ export default function Form({ ingredient, setIngredient, handleAddIngredient })
                 <label htmlFor='ingredients'>Add ingredients</label>
                 <input type='text'
                         id='ingredients'
+                        name='ingredient'
+                        aria-label='Add ingredient'
                         placeholder='e.g. oregano'
                         value={ingredient}
                         onChange={(e) => setIngredient(e.target.value)}

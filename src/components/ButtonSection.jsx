@@ -1,7 +1,7 @@
 import '../styles/ButtonSection.css'
 
 
-export default function ButtonSection({ setToggle, toggle, handleToggle }) {
+export default function ButtonSection({ handleToggle }) {
     return <article className='button-article'>
                 <section className='button-section'>
                   <h3>Ready for a recipe?</h3>  
