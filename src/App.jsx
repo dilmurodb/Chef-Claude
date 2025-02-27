@@ -7,6 +7,11 @@ function App() {
 
   const [ingredient, setIngredient] = useState('')
   const [ingredientsList, setIngredientsList] = useState([])
+  const [toggle, setToggle] = useState(false)
+
+  const handleToggle = () => {
+    setToggle(!toggle)
+  }
 
 
   const handleAddIngredient = (value) => {
@@ -21,7 +26,10 @@ function App() {
       <Main handleAddIngredient={handleAddIngredient}
             ingredient={ingredient}
             setIngredient={setIngredient}
-            ingredientsList={ingredientsList} />
+            ingredientsList={ingredientsList}
+            toggle={toggle}
+            setToggle={setToggle}
+            handleToggle={handleToggle} />
     </>
   )
 }
