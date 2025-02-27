@@ -1,0 +1,22 @@
+.text-section {
+    width: 594px;
+    /* border: 1px solid black; */
+    margin-top: 48px;
+}
+.text-section h2 {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #141413;
+    margin-bottom: 15px;
+}
+.text-section ul {
+    margin-left: 20px;
+}
+.text-section li {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 15px;
+}
