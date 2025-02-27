@@ -1,0 +1,72 @@
+.result-article {
+    width: 594px;
+    height: 1614px;
+    /* border: 1px solid black; */
+    margin-top: 60px;
+}
+.result-article-title {
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #141413;
+    margin-bottom: 30px;
+}
+.result-article-text {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 50px;
+}
+.result-article-ingredients {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #141413;
+    margin-bottom: 20px;
+}
+/* .result-article-ingredients li {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 20px;
+} */
+.result-article-instructions {
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #141413;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* .result-article-instructions li {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 20px;
+} */
+
+.result-article-ul {
+    margin-left: 20px;
+}
+.result-article-ul li {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.result-article-ol {
+    margin-left: 20px;
+}
+.result-article-ol li {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #475467;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
