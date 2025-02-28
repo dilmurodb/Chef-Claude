@@ -16,7 +16,6 @@ function App() {
     setIsLoading(true)
     setShowRecipe(!showRecipe)
     let result = await getRecipeFromMistral(ingredientsList)
-    console.log(result)
     setRecipe(result)
     if (result) {
       setIsLoading(false)
