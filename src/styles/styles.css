@@ -15,7 +15,6 @@
     padding: 24px 16px;
     background-color: #FFFFFF;
     /* box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06); */
-    /* border: 1px solid black; */
 }
 .navbar-section {
     display: flex;
@@ -40,7 +39,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid black; */
     width: 720px;
     min-height: 742px;
     background-color: #FAFAF8;
