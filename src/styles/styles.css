@@ -40,6 +40,8 @@
     flex-direction: column;
     align-items: center;
     width: 720px;
-    min-height: 742px;
+    /* min-height: 742px; */
+    /* latest addition is in lower line, previous version is in upper line */
+    min-height: 200px;
     background-color: #FAFAF8;
 }

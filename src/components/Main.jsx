@@ -19,7 +19,7 @@ export default function Main({ ingredient,
                         ingredient={ingredient}
                         setIngredient={setIngredient}/>
                 { ingredientsList.length > 0 ? <TextSection ingredientsList={ingredientsList} /> : null}
-                { ingredientsList.length > 0 ? <ButtonSection handleGetRecipe={handleGetRecipe} /> : null}
+                { ingredientsList.length > 3 ? <ButtonSection handleGetRecipe={handleGetRecipe} /> : null}
                 { showRecipe ? isLoading ? <h3>Data is loading...</h3> : <ResultArticle recipe={recipe} /> : null}
            </main>
 }

@@ -7,6 +7,8 @@
     border-radius: 8px;
     background-color: #F0EFEB;
     margin-top: 48px;
+    /* lower line is latest addition */
+    margin-bottom: 50px;
 }
 .button-section {
     width: 340px;
