@@ -8,7 +8,6 @@ function App() {
 
   const [ingredient, setIngredient] = useState('')
   const [ingredientsList, setIngredientsList] = useState([])
-  // const [toggle, setToggle] = useState(false)
   const [showRecipe, setShowRecipe] = useState(false)
   const [recipe, setRecipe] = useState()
   const [isLoading, setIsLoading] = useState(false)
@@ -24,8 +23,6 @@ function App() {
       setShowRecipe(true)
     }
   }
-
-  // console.log(recipe)
 
 
   const handleAddIngredient = (value) => {
