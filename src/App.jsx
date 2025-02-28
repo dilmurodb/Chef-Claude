@@ -8,19 +8,30 @@ function App() {
 
   const [ingredient, setIngredient] = useState('')
   const [ingredientsList, setIngredientsList] = useState([])
-  const [toggle, setToggle] = useState(false)
+  // const [toggle, setToggle] = useState(false)
+  const [showRecipe, setShowRecipe] = useState(false)
+  const [recipe, setRecipe] = useState()
+  const [isLoading, setIsLoading] = useState(false)
 
-  const handleToggle = async () => {
-    setToggle(!toggle)
-    let a = await getRecipeFromMistral(ingredientsList)
-    console.log(a)
+  const handleGetRecipe = async () => {
+    setIsLoading(true)
+    setShowRecipe(!showRecipe)
+    let result = await getRecipeFromMistral(ingredientsList)
+    console.log(result)
+    setRecipe(result)
+    if (result) {
+      setIsLoading(false)
+      setShowRecipe(true)
+    }
   }
 
-  
+  // console.log(recipe)
 
 
   const handleAddIngredient = (value) => {
-    setIngredientsList([...ingredientsList, value])
+    if (value) {
+      setIngredientsList([...ingredientsList, value])
+    }
     setIngredient('')
   }
 
@@ -31,9 +42,10 @@ function App() {
             ingredient={ingredient}
             setIngredient={setIngredient}
             ingredientsList={ingredientsList}
-            toggle={toggle}
-            setToggle={setToggle}
-            handleToggle={handleToggle} />
+            showRecipe={showRecipe}
+            handleGetRecipe={handleGetRecipe}
+            recipe={recipe}
+            isLoading={isLoading} />
     </>
   )
 }

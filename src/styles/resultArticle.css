@@ -4,21 +4,21 @@
     /* border: 1px solid black; */
     margin-top: 60px;
 }
-.result-article-title {
+.result-article h2 {
     font-family: "Inter", serif;
     font-weight: 600;
     font-size: 30px;
     color: #141413;
     margin-bottom: 30px;
 }
-.result-article-text {
+.result-article p {
     font-family: "Inter", serif;
     font-weight: 400;
     font-size: 18px;
     color: #475467;
     margin-bottom: 50px;
 }
-.result-article-ingredients {
+.result-article h3 {
     font-family: "Inter", serif;
     font-weight: 700;
     font-size: 18px;
@@ -48,10 +48,10 @@
     margin-bottom: 20px;
 } */
 
-.result-article-ul {
+.result-article ul {
     margin-left: 20px;
 }
-.result-article-ul li {
+.result-article ul li {
     font-family: "Inter", serif;
     font-weight: 400;
     font-size: 18px;
@@ -59,10 +59,10 @@
     margin-bottom: 20px;
     margin-left: 20px;
 }
-.result-article-ol {
+.result-article ol {
     margin-left: 20px;
 }
-.result-article-ol li {
+.result-article ol li {
     font-family: "Inter", serif;
     font-weight: 400;
     font-size: 18px;

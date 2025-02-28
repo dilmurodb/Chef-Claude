@@ -1,9 +1,11 @@
 import '../styles/ResultArticle.css'
+import ReactMarkdown from 'react-markdown'
 
 
-export default function ResultArticle() {
+export default function ResultArticle({recipe}) {
     return <article className='result-article'>
-                <h2 className='result-article-title'>Suggested recipe:</h2>
+                <ReactMarkdown>{recipe}</ReactMarkdown>
+                {/* <h2 className='result-article-title'>Suggested recipe:</h2>
                 <p className='result-article-text'>Based on your available ingredients, I would recommend making a Creamy Garlic Parmesan Chicken dish. Here’s the recipe:</p>
                 <h3 className='result-article-ingredients'>Ingredients:</h3>
                 <ul className='result-article-ul'>
@@ -30,6 +32,6 @@ export default function ResultArticle() {
                     <li>Combine with Chicken: Return the chicken breasts to the skillet, spooning the sauce over them. Let everything simmer together for a couple of minutes until the chicken is heated through.</li>
                     <li>Serve: Garnish with fresh parsley and serve the chicken with the creamy garlic Parmesan sauce over pasta, rice, or mashed potatoes.</li>
                 </ol>
-                <p className='result-article-text'>Enjoy!</p>
+                <p className='result-article-text'>Enjoy!</p> */}
            </article>
 }
